@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Live Stream</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <br />
+    <h2 style="font-style: normal" class="text-center">
+      Welcome to the Live Stream
+    </h2>
+    <br />
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h4>RTMP</h4>
+          <img
+            style="align-self: center"
+            src="{{ url_for('video_rtmp') }}"
+            alt="RTMP Stream"
+            class="img-fluid"
+            width="55%"
+          />
+        </div>
+        <div class="col-md-6">
+          <h4>RTSP</h4>
+          <img
+            style="align-self: center"
+            src="{{ url_for('video_rtsp') }}"
+            alt="RTSP Stream"
+            class="img-fluid"
+            width="55%"
+          />
+        </div>
+      </div>
+    </div>
+    <br />
+  </body>
+</html>
